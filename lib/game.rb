@@ -49,7 +49,7 @@ class Game
     if self.board.valid_move?(@move)
       self.board.update(@move, @current_player)
       self.board.display
-      current_player == self.player_1 ? current_player = self.player_2 : current_player = self.player_1
+      # current_player == self.player_1 ? current_player = self.player_2 : current_player = self.player_1
     else
       puts "Please input a valid move"
       self.turn
