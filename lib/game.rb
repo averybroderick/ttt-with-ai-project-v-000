@@ -46,13 +46,12 @@ class Game
   def turn
     @current_player = self.current_player
     @move = current_player.move(self.board)
-    until self.board.valid_move?(@move)
-      puts "Please input a valid move"
-    end
-
     if self.board.valid_move?(@move)
       self.board.update(@move, @current_player)
       self.board.display
+    else 
+      puts "Please enter a valid input"
+      @move = current_player.move(self.board)
     end
   end
 
