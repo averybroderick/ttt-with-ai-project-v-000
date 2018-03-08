@@ -19,7 +19,7 @@ class Board
   end
 
   def position(n)
-    self.cells[n.to_i - 1]
+    self.cells[n.to_i - 1] 
   end
 
   def full?
@@ -45,7 +45,7 @@ class Board
   end
 
   def update(n, player)
-    self.position(n) = player.token
+    self.cells[n.to_i-1] = player.token
   end
 
 end
