@@ -4,4 +4,4 @@ require_relative '../config/environment'
 
 
 game = Game.new
-game.turn
+game.play
