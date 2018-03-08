@@ -19,7 +19,7 @@ class Board
   end
 
   def position(n)
-    self.cells[n.to_i - 1] 
+    self.cells[n.to_i - 1]
   end
 
   def full?
