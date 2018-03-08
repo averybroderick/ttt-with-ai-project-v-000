@@ -48,9 +48,9 @@ class Game
     @move = current_player.move(self.board)
     until self.board.valid_move?(@move)
       puts "Please input a valid move"
-    end
-    self.board.update(@move, @current_player)
-    self.board.display
+    else
+      self.board.update(@move, @current_player)
+      self.board.display
     end
   end
 
