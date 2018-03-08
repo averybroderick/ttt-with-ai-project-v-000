@@ -52,7 +52,6 @@ class Game
 
     self.board.update(@move, @current_player)
     self.board.display
-      # current_player == self.player_1 ? current_player = self.player_2 : current_player = self.player_1
     else
 
     end
