@@ -49,7 +49,7 @@ class Game
     if self.board.valid_move?(@move)
       self.board.update(@move, @current_player)
       self.board.display
-    else 
+    else
       puts "Please enter a valid input"
       @move = current_player.move(self.board)
     end
