@@ -51,7 +51,7 @@ class Game
       self.board.display
     else
       puts "Please enter a valid input"
-      @move = current_player.move(self.board)
+      self.turn
     end
   end
 
