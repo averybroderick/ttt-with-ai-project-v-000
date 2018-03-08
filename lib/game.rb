@@ -52,6 +52,7 @@ class Game
       current_player == self.player_1 ? current_player = self.player_2 : current_player = self.player_1
     else
       puts "Please input a valid move"
+      self.turn
     end
   end
 
